@@ -10,17 +10,17 @@
 
 <body>
     <!-- nav bar -->
-    <nav class="navbar navbar-expand-lg bg-white">
+    <nav class="navbar navbar-expand-lg bg-white border-bottom ">
         <div class="container-fluid">
             <a class="navbar-brand d-flex " href="#">
                 <div class="nav-logo ms-3">
                     <svg viewBox="0 0 1043.63 592.71" class="at au nav-brand-logo"><g data-name="Layer 2"><g data-name="Layer 1"><path d="M588.67 296.36c0 163.67-131.78 296.35-294.33 296.35S0 460 0 296.36 131.78 0 294.34 0s294.33 132.69 294.33 296.36M911.56 296.36c0 154.06-65.89 279-147.17 279s-147.17-124.94-147.17-279 65.88-279 147.16-279 147.17 124.9 147.17 279M1043.63 296.36c0 138-23.17 249.94-51.76 249.94s-51.75-111.91-51.75-249.94 23.17-249.94 51.75-249.94 51.76 111.9 51.76 249.94"></path></g></g></svg>
                 </div>
-                <div class="input-group ms-3">
-                    <span class="input-group-text border-0 bg-light" id="basic-addon1">
+                <div class="input-group ms-3 bg-light rounded-5">
+                    <span class="input-group-text border-0 bg-transparent" id="basic-addon1">
                       <i class="bi bi-search"></i>
                     </span>
-                    <input type="text" class="form-control bg-light input-outline" placeholder="Search Medium" aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="text" class="form-control  input-outline bg-transparent " placeholder="Search Medium" aria-label="Username" aria-describedby="basic-addon1">
                 </div>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,8 +29,8 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
                     <li class="nav-item">
-                        <a class="nav-link active " aria-current="page" href="#">
-                            <i class="bi bi-pencil-square fs-4 me-1 text-secondary"></i> Write
+                        <a class="nav-link active" aria-current="page" href="#">
+                            <i class="bi bi-pencil-square fs-4 me-1   align-middle"></i> <span>Write</span>
                         </a>
                     </li>
                     <li class="nav-item">
@@ -40,9 +40,13 @@
                         <a class="nav-link" href="#">Sign In</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <img src="./img/default_profile.png" class=" rounded-pill border-secondary border border-1" alt="">
+                        <a href="#" class=" text-decoration-none text-secondary" data-bs-toggle="dropdown">
+                            <img src="./img/default_profile.png" class="w-50 rounded-pill border-secondary border border-1" alt="">
+                            <i class="bi bi-caret-down"></i>
                         </a>
+                        <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./img/default_profile.png" class="w-50 rounded-pill border-secondary border border-1" alt="">
+                        </a> -->
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Action</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
@@ -56,6 +60,699 @@
             </div>
         </div>
     </nav>
+
+    <main>
+        <section id="blogs">
+            <div class="container mt-6">
+                <div class="row justify-content-center">
+                    <div class="col-md-7 offset-1 border-end border-1">
+                        <div class="category">
+                            <div class="banner d-flex align-items-center ">
+                                <div class="tag-container  rounded-pill bg-secondary d-flex align-items-center justify-content-center">
+                                    <i class="bi bi-tag-fill fs-5 tag-icon"></i>
+                                </div>
+                                <h1 class=" fw-bold ms-2">Programming</h1>
+                            </div>
+                            <div class="buttons my-2">
+                                <button class=" btn btn-success ">Follow</button>
+                                <button class=" btn btn-outline-success  ms-2">Start writing</button>
+                            </div>
+                            <!-- tabs  -->
+                            <div class=" mt-3">
+                                <ul class="nav nav-pills ">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Trending</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Lastest</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Best</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <hr class=" p-0 m-0">
+                            <!-- tab end  -->
+                        </div>
+                        <div class=" mt-4">
+                            <!-- author posts  -->
+                            <article>
+                                <!-- person 1 -->
+                                <div class="author-details">
+                                    <div class="author-profile">
+                                        <a href="#" class=" text-decoration-none  text-black  ">
+                                            <img src="./img/author_1.jpeg" alt="" class=" rounded-pill">
+                                        </a>
+                                        <a href="#" class=" text-decoration-none  text-dark fw-semibold ms-1">
+                                            <span class=" small">Tom Smykowski</span>
+                                        </a>
+                                        <a href="#" class=" text-decoration-none  text-black-50  ms-1 ">
+                                            <span class=" small">2 days ago</span>
+                                        </a>
+                                        <a href="#" class=" text-decoration-none  text-black-50  ms-1">
+                                            <span class=" small">Member-only</span>
+                                        </a>
+                                    </div>
+                                    <div class="author-post">
+                                        <div class="row mt-3 justify-content-between">
+                                            <div class="col-8 ">
+                                                <a href="#" class=" h5 text-decoration-none text-black fw-bold">
+                                                    🎮 5 Awesome C# Projects: TODO, Password Manager, Steam, Nintendo Switch And Unity
+                                                </a>
+                                                <a href="#" class=" text-decoration-none text-black para small">
+                                                    Lately I wrote about interesting open source projects in Rust, Swift, Python, Java and Go. So naturally, I can’t forget about C#. My beloved …
+                                                </a>
+
+                                                <div class="row justify-content-between my-4">
+                                                    <div class="col-7">
+                                                        <button class=" btn btn-secondary">Programming</button>
+                                                        <a href="#" class=" fw-lighter small text-black-50 text-decoration-none"> 4 min read</a>
+                                                    </div>
+                                                    <div class="col-1">
+                                                        <a href="#" class=" text-black">
+                                                            <i class=" bi bi-bookmark-plus bookmark-icon"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 ">
+                                                <img src="./img/author_1_post_img2.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+
+                                <!-- author posts end -->
+                            </article>
+                            <article>
+                                <!-- person 2 -->
+                                <div class="author-details">
+                                    <div class="author-profile">
+                                        <a href="#" class=" text-decoration-none  text-black  ">
+                                            <img src="./img/author_2.jpeg" alt="" class=" rounded-pill">
+                                        </a>
+                                        <a href="#" class=" text-decoration-none  text-dark fw-semibold ms-1">
+                                            <span class=" small">Vlad Mykol</span>
+                                        </a>
+                                        <a href="#" class=" text-decoration-none  text-black-50  ms-1 ">
+                                            <span class=" small">2 days ago</span>
+                                        </a>
+                                        <a href="#" class=" text-decoration-none  text-black-50  ms-1">
+                                            <span class=" small">Member-only</span>
+                                        </a>
+                                    </div>
+                                    <div class="author-post">
+                                        <div class="row mt-3 justify-content-between">
+                                            <div class="col-8 ">
+                                                <a href="#" class=" h5 text-decoration-none text-black fw-bold">
+                                                    Type ‘Float’ is An Expensive Mistake
+                                                </a>
+                                                <a href="#" class=" text-decoration-none text-black para small">
+                                                    My team trapped in a floating math pitfall of monetary calculations —  Today my team finished rewriting a bunch of code, and the reason was a wrong decision in the first place — using float data type to represent…
+                                                </a>
+
+                                                <div class="row justify-content-between my-4">
+                                                    <div class="col-7">
+                                                        <button class=" btn btn-secondary">Programming</button>
+                                                        <a href="#" class=" fw-lighter small text-black-50 text-decoration-none"> 4 min read</a>
+                                                    </div>
+                                                    <div class="col-1">
+                                                        <a href="#" class=" text-black">
+                                                            <i class=" bi bi-bookmark-plus bookmark-icon"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 ">
+                                                <img src="./img/author_2_post_img.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </article>
+                            <article>
+                                <!-- person 3  -->
+                                <div class="author-details">
+                                    <div class="author-profile">
+                                        <a href="#" class=" text-decoration-none  text-black  ">
+                                            <img src="./img/autho_3.jpeg" alt="" class=" rounded-pill">
+                                        </a>
+                                        <a href="#" class=" text-decoration-none  text-dark fw-semibold ms-1">
+                                            <span class=" small">Tim Sneath</span>
+                                        </a>
+                                        <a href="#" class=" text-decoration-none  text-black-50  ms-1 ">
+                                            <span class=" small">2 days ago</span>
+                                        </a>
+                                    </div>
+                                    <div class="author-post">
+                                        <div class="row mt-3 justify-content-between">
+                                            <div class="col-8 ">
+                                                <a href="#" class=" h5 text-decoration-none text-black fw-bold">
+                                                    Advent of Code 2022: Dart Edition
+                                                </a>
+                                                <a href="#" class=" text-decoration-none text-black para small">
+                                                    A great way to learn Dart and have fun in the process —  Happy Christmas! This year’s Advent of Code is over, and it was tremendous fun as always. I’ve enjoyed doing the (easier) challenges over the years…
+                                                </a>
+
+                                                <div class="row justify-content-between my-4">
+                                                    <div class="col-7">
+                                                        <button class=" btn btn-secondary">Programming</button>
+                                                        <a href="#" class=" fw-lighter small text-black-50 text-decoration-none"> 3 min read</a>
+                                                    </div>
+                                                    <div class="col-1">
+                                                        <a href="#" class=" text-black">
+                                                            <i class=" bi bi-bookmark-plus bookmark-icon"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 ">
+                                                <img src="./img/author_3_post_img.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </article>
+
+                            <article>
+                                <!-- person 3  -->
+                                <div class="author-details">
+                                    <div class="author-profile">
+                                        <a href="#" class=" text-decoration-none  text-black  ">
+                                            <img src="./img/autho_3.jpeg" alt="" class=" rounded-pill">
+                                        </a>
+                                        <a href="#" class=" text-decoration-none  text-dark fw-semibold ms-1">
+                                            <span class=" small">Tim Sneath</span>
+                                        </a>
+                                        <a href="#" class=" text-decoration-none  text-black-50  ms-1 ">
+                                            <span class=" small">2 days ago</span>
+                                        </a>
+                                    </div>
+                                    <div class="author-post">
+                                        <div class="row mt-3 justify-content-between">
+                                            <div class="col-8 ">
+                                                <a href="#" class=" h5 text-decoration-none text-black fw-bold">
+                                                    Advent of Code 2022: Dart Edition
+                                                </a>
+                                                <a href="#" class=" text-decoration-none text-black para small">
+                                                    A great way to learn Dart and have fun in the process —  Happy Christmas! This year’s Advent of Code is over, and it was tremendous fun as always. I’ve enjoyed doing the (easier) challenges over the years…
+                                                </a>
+
+                                                <div class="row justify-content-between my-4">
+                                                    <div class="col-7">
+                                                        <button class=" btn btn-secondary">Programming</button>
+                                                        <a href="#" class=" fw-lighter small text-black-50 text-decoration-none"> 3 min read</a>
+                                                    </div>
+                                                    <div class="col-1">
+                                                        <a href="#" class=" text-black">
+                                                            <i class=" bi bi-bookmark-plus bookmark-icon"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 ">
+                                                <img src="./img/author_3_post_img.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </article>
+                            <article>
+                                <!-- person 3  -->
+                                <div class="author-details">
+                                    <div class="author-profile">
+                                        <a href="#" class=" text-decoration-none  text-black  ">
+                                            <img src="./img/autho_3.jpeg" alt="" class=" rounded-pill">
+                                        </a>
+                                        <a href="#" class=" text-decoration-none  text-dark fw-semibold ms-1">
+                                            <span class=" small">Tim Sneath</span>
+                                        </a>
+                                        <a href="#" class=" text-decoration-none  text-black-50  ms-1 ">
+                                            <span class=" small">2 days ago</span>
+                                        </a>
+                                    </div>
+                                    <div class="author-post">
+                                        <div class="row mt-3 justify-content-between">
+                                            <div class="col-8 ">
+                                                <a href="#" class=" h5 text-decoration-none text-black fw-bold">
+                                                    Advent of Code 2022: Dart Edition
+                                                </a>
+                                                <a href="#" class=" text-decoration-none text-black para small">
+                                                    A great way to learn Dart and have fun in the process —  Happy Christmas! This year’s Advent of Code is over, and it was tremendous fun as always. I’ve enjoyed doing the (easier) challenges over the years…
+                                                </a>
+
+                                                <div class="row justify-content-between my-4">
+                                                    <div class="col-7">
+                                                        <button class=" btn btn-secondary">Programming</button>
+                                                        <a href="#" class=" fw-lighter small text-black-50 text-decoration-none"> 3 min read</a>
+                                                    </div>
+                                                    <div class="col-1">
+                                                        <a href="#" class=" text-black">
+                                                            <i class=" bi bi-bookmark-plus bookmark-icon"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 ">
+                                                <img src="./img/author_3_post_img.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </article>
+
+                            <article>
+                                <!-- person 3  -->
+                                <div class="author-details">
+                                    <div class="author-profile">
+                                        <a href="#" class=" text-decoration-none  text-black  ">
+                                            <img src="./img/autho_3.jpeg" alt="" class=" rounded-pill">
+                                        </a>
+                                        <a href="#" class=" text-decoration-none  text-dark fw-semibold ms-1">
+                                            <span class=" small">Tim Sneath</span>
+                                        </a>
+                                        <a href="#" class=" text-decoration-none  text-black-50  ms-1 ">
+                                            <span class=" small">2 days ago</span>
+                                        </a>
+                                    </div>
+                                    <div class="author-post">
+                                        <div class="row mt-3 justify-content-between">
+                                            <div class="col-8 ">
+                                                <a href="#" class=" h5 text-decoration-none text-black fw-bold">
+                                                    Advent of Code 2022: Dart Edition
+                                                </a>
+                                                <a href="#" class=" text-decoration-none text-black para small">
+                                                    A great way to learn Dart and have fun in the process —  Happy Christmas! This year’s Advent of Code is over, and it was tremendous fun as always. I’ve enjoyed doing the (easier) challenges over the years…
+                                                </a>
+
+                                                <div class="row justify-content-between my-4">
+                                                    <div class="col-7">
+                                                        <button class=" btn btn-secondary">Programming</button>
+                                                        <a href="#" class=" fw-lighter small text-black-50 text-decoration-none"> 3 min read</a>
+                                                    </div>
+                                                    <div class="col-1">
+                                                        <a href="#" class=" text-black">
+                                                            <i class=" bi bi-bookmark-plus bookmark-icon"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 ">
+                                                <img src="./img/author_3_post_img.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </article>
+
+                            <article>
+                                <!-- person 3  -->
+                                <div class="author-details">
+                                    <div class="author-profile">
+                                        <a href="#" class=" text-decoration-none  text-black  ">
+                                            <img src="./img/autho_3.jpeg" alt="" class=" rounded-pill">
+                                        </a>
+                                        <a href="#" class=" text-decoration-none  text-dark fw-semibold ms-1">
+                                            <span class=" small">Tim Sneath</span>
+                                        </a>
+                                        <a href="#" class=" text-decoration-none  text-black-50  ms-1 ">
+                                            <span class=" small">2 days ago</span>
+                                        </a>
+                                    </div>
+                                    <div class="author-post">
+                                        <div class="row mt-3 justify-content-between">
+                                            <div class="col-8 ">
+                                                <a href="#" class=" h5 text-decoration-none text-black fw-bold">
+                                                    Advent of Code 2022: Dart Edition
+                                                </a>
+                                                <a href="#" class=" text-decoration-none text-black para small">
+                                                    A great way to learn Dart and have fun in the process —  Happy Christmas! This year’s Advent of Code is over, and it was tremendous fun as always. I’ve enjoyed doing the (easier) challenges over the years…
+                                                </a>
+
+                                                <div class="row justify-content-between my-4">
+                                                    <div class="col-7">
+                                                        <button class=" btn btn-secondary">Programming</button>
+                                                        <a href="#" class=" fw-lighter small text-black-50 text-decoration-none"> 3 min read</a>
+                                                    </div>
+                                                    <div class="col-1">
+                                                        <a href="#" class=" text-black">
+                                                            <i class=" bi bi-bookmark-plus bookmark-icon"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 ">
+                                                <img src="./img/author_3_post_img.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </article>
+
+                            <article>
+                                <!-- person 3  -->
+                                <div class="author-details">
+                                    <div class="author-profile">
+                                        <a href="#" class=" text-decoration-none  text-black  ">
+                                            <img src="./img/autho_3.jpeg" alt="" class=" rounded-pill">
+                                        </a>
+                                        <a href="#" class=" text-decoration-none  text-dark fw-semibold ms-1">
+                                            <span class=" small">Tim Sneath</span>
+                                        </a>
+                                        <a href="#" class=" text-decoration-none  text-black-50  ms-1 ">
+                                            <span class=" small">2 days ago</span>
+                                        </a>
+                                    </div>
+                                    <div class="author-post">
+                                        <div class="row mt-3 justify-content-between">
+                                            <div class="col-8 ">
+                                                <a href="#" class=" h5 text-decoration-none text-black fw-bold">
+                                                    Advent of Code 2022: Dart Edition
+                                                </a>
+                                                <a href="#" class=" text-decoration-none text-black para small">
+                                                    A great way to learn Dart and have fun in the process —  Happy Christmas! This year’s Advent of Code is over, and it was tremendous fun as always. I’ve enjoyed doing the (easier) challenges over the years…
+                                                </a>
+
+                                                <div class="row justify-content-between my-4">
+                                                    <div class="col-7">
+                                                        <button class=" btn btn-secondary">Programming</button>
+                                                        <a href="#" class=" fw-lighter small text-black-50 text-decoration-none"> 3 min read</a>
+                                                    </div>
+                                                    <div class="col-1">
+                                                        <a href="#" class=" text-black">
+                                                            <i class=" bi bi-bookmark-plus bookmark-icon"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 ">
+                                                <img src="./img/author_3_post_img.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </article>
+
+                            <article>
+                                <!-- person 3  -->
+                                <div class="author-details">
+                                    <div class="author-profile">
+                                        <a href="#" class=" text-decoration-none  text-black  ">
+                                            <img src="./img/autho_3.jpeg" alt="" class=" rounded-pill">
+                                        </a>
+                                        <a href="#" class=" text-decoration-none  text-dark fw-semibold ms-1">
+                                            <span class=" small">Tim Sneath</span>
+                                        </a>
+                                        <a href="#" class=" text-decoration-none  text-black-50  ms-1 ">
+                                            <span class=" small">2 days ago</span>
+                                        </a>
+                                    </div>
+                                    <div class="author-post">
+                                        <div class="row mt-3 justify-content-between">
+                                            <div class="col-8 ">
+                                                <a href="#" class=" h5 text-decoration-none text-black fw-bold">
+                                                    Advent of Code 2022: Dart Edition
+                                                </a>
+                                                <a href="#" class=" text-decoration-none text-black para small">
+                                                    A great way to learn Dart and have fun in the process —  Happy Christmas! This year’s Advent of Code is over, and it was tremendous fun as always. I’ve enjoyed doing the (easier) challenges over the years…
+                                                </a>
+
+                                                <div class="row justify-content-between my-4">
+                                                    <div class="col-7">
+                                                        <button class=" btn btn-secondary">Programming</button>
+                                                        <a href="#" class=" fw-lighter small text-black-50 text-decoration-none"> 3 min read</a>
+                                                    </div>
+                                                    <div class="col-1">
+                                                        <a href="#" class=" text-black">
+                                                            <i class=" bi bi-bookmark-plus bookmark-icon"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 ">
+                                                <img src="./img/author_3_post_img.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class=" sticky-top">
+                            <div class="row  ">
+                                <div class="col-10 offset-1">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="stories-count">
+                                                <h4 class=" fw-bold">270K</h4>
+                                                <span class=" text-black-50">Stories</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="writers-count">
+                                                <h4 class=" fw-bold">92K</h4>
+                                                <span class=" text-black-50">Writers</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="users d-flex justify-content-start mt-3 mb-4">
+                                        <img src="./img/author_9.jpeg" alt="">
+                                        <img src="./img/author_7.jpeg" alt="">
+                                        <img src="./img/author_6.jpeg" alt="">
+                                        <img src="./img/author_5.jpeg" alt="">
+                                        <img src="./img/author_4.jpeg" alt="">
+                                        <img src="./img/author_3.jpeg" alt="">
+                                        <img src="./img/author_1.jpeg" alt="">
+                                        <img src="./img/author_8.png" alt="">
+                                        <img src="./img/author_2.jpeg" alt="">
+                                    </div>
+                                    <hr>
+                                </div>
+                            </div>
+
+                            <div class="topics">
+                                <div class="row justify-content-center">
+                                    <div class="col-10 ">
+                                        <h6 class=" fw-semibold">Related Topics</h6>
+
+                                        <div class="categories mt-3 mb-5">
+                                            <button class=" btn btn-secondary mb-3">Software Development</button>
+                                            <button class=" btn btn-secondary mb-3">Java Script</button>
+                                            <button class=" btn btn-secondary mb-3">Web Development</button>
+                                            <button class=" btn btn-secondary mb-3">Coding</button>
+                                            <button class=" btn btn-secondary mb-3">Tehnology</button>
+                                            <button class=" btn btn-secondary mb-3">Python</button>
+                                            <button class=" btn btn-secondary mb-3">Data Science</button>
+                                            <button class=" btn btn-secondary mb-3">Software Engineering</button>
+                                            <button class=" btn btn-secondary mb-3">React</button>
+                                        </div>
+
+                                        <h6 class=" fw-semibold">Top Writers</h6>
+                                        <!-- writers  -->
+                                        <div class="writer mt-4">
+                                            <div class="javinpaul mb-2">
+                                                <div class="row g-0">
+                                                    <div class="col-1">
+                                                        <a href="#" class=" text-decoration-none text-black">
+                                                            <img src="./img/author_1.jpeg" class=" rounded-pill" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-7 offset-1">
+                                                        <div class="">
+                                                            <a href="#" class=" text-decoration-none text-black">
+                                                                <div class=" fw-bold">javinpaul</div>
+                                                            </a>
+                                                            <a href="#" class=" text-decoration-none text-black">
+                                                                <span class=" text-black-50 fw-lighter small about-writers ">
+                                                                    I am Java programmer, blogger, working on Java, J2EE,Java...
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="">
+                                                            <button class=" btn btn-success ">Follow</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="writer mt-4">
+                                            <div class="FrankAndrade mb-2">
+                                                <div class="row g-0">
+                                                    <div class="col-1">
+                                                        <a href="#" class=" text-decoration-none text-black">
+                                                            <img src="./img/author_2.jpeg" class=" rounded-pill" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-7 offset-1">
+                                                        <div class="">
+                                                            <a href="#" class=" text-decoration-none text-black">
+                                                                <div class=" fw-bold">Frank Andrade</div>
+                                                            </a>
+                                                            <a href="#" class=" text-decoration-none text-black">
+                                                                <span class=" text-black-50 fw-lighter small about-writers">
+                                                                    6M+ Views on Medium || Code Less, Earn More: Make money using ...
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="">
+                                                            <button class=" btn btn-success ">Follow</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="writer mt-4">
+                                            <div class="FrankAndrade mb-2">
+                                                <div class="row g-0">
+                                                    <div class="col-1">
+                                                        <a href="#" class=" text-decoration-none text-black">
+                                                            <img src="./img/author_3.jpeg" class=" rounded-pill" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-7 offset-1">
+                                                        <div class="">
+                                                            <a href="#" class=" text-decoration-none text-black">
+                                                                <div class=" fw-bold">Bhargav Bachina</div>
+                                                            </a>
+                                                            <a href="#" class=" text-decoration-none text-black">
+                                                                <span class=" text-black-50 fw-lighter small about-writers">
+                                                                    Entrepreneur | 600+ Tech Articles...
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="">
+                                                            <button class=" btn btn-success ">Follow</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="writer mt-4">
+                                            <div class="FrankAndrade mb-2">
+                                                <div class="row g-0">
+                                                    <div class="col-1">
+                                                        <a href="#" class=" text-decoration-none text-black">
+                                                            <img src="./img/author_4.jpeg" class=" rounded-pill" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-7 offset-1">
+                                                        <div class="">
+                                                            <a href="#" class=" text-decoration-none text-black">
+                                                                <div class=" fw-bold">Giorgos Myrianthous</div>
+                                                            </a>
+                                                            <a href="#" class=" text-decoration-none text-black">
+                                                                <span class=" text-black-50 fw-lighter small about-writers">
+                                                                    I write about Python, DataOps and MLOps...
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="">
+                                                            <button class=" btn btn-success ">Follow</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="writer mt-4">
+                                            <div class="FrankAndrade mb-2">
+                                                <div class="row g-0">
+                                                    <div class="col-1">
+                                                        <a href="#" class=" text-decoration-none text-black">
+                                                            <img src="./img/author_5.jpeg" class=" rounded-pill" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-7 offset-1">
+                                                        <div class="">
+                                                            <a href="#" class=" text-decoration-none text-black">
+                                                                <div class=" fw-bold">fatfish</div>
+                                                            </a>
+                                                            <a href="#" class=" text-decoration-none text-black">
+                                                                <span class=" text-black-50 fw-lighter small about-writers">
+                                                                    Hi friends, I am a front-end engineer from Alibaba, let’s code happily together....
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="">
+                                                            <button class=" btn btn-success ">Follow</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="writer mt-4">
+                                            <div class="FrankAndrade mb-2">
+                                                <div class="row g-0">
+                                                    <div class="col-1">
+                                                        <a href="#" class=" text-decoration-none text-black">
+                                                            <img src="./img/author_6.jpeg" class=" rounded-pill" alt="">
+                                                        </a>
+                                                    </div>
+                                                    <div class="col-7 offset-1">
+                                                        <div class="">
+                                                            <a href="#" class=" text-decoration-none text-black">
+                                                                <div class=" fw-bold">Giorgos Myrianthous</div>
+                                                            </a>
+                                                            <a href="#" class=" text-decoration-none text-black">
+                                                                <span class=" text-black-50 fw-lighter small about-writers">
+                                                                    I write about Python, DataOps and MLOps...
+                                                                </span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div class="">
+                                                            <button class=" btn btn-success ">Follow</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- writers end  -->
+
+                                        <div class="row">
+                                            <div class="col-10 mt-2 ">
+                                                <div class=" mb-4">
+                                                    <a href="" class=" text-success text-decoration-none">See More</a>
+                                                </div>
+                                                <div class="">
+                                                    <a href="" class=" text-decoration-none text-black-50 small">Vist the archive</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
 
     <script type="module" src="/main.js"></script>
