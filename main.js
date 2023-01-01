@@ -2,6 +2,27 @@ import './style.scss';
 import './node_modules/bootstrap/dist/js/bootstrap.bundle';
 
 
+// document.querySelector('a').addEventListener('click', function(event) {
+//     event.preventDefault();
+//     document.body.style.opacity = 0.5;
+    
+//     setTimeout(function() {
+//       window.location = event.target.href;
+//       document.body.style.transitionDuration = 0.6 + 's';
+//     }, 200);
+//   });
+  
+  document.querySelectorAll('a').forEach(function(a) {
+    a.addEventListener('click', function(event) {
+      event.preventDefault();
+     
+      setTimeout(function() {
+        window.location = event.target.href;
+        document.body.style.opacity = 0.6;
+      }, 200);
+    });
+  });
+  
 
 
 // const images = document.querySelectorAll('[loading="lazy"]');

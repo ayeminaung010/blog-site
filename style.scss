@@ -41,6 +41,13 @@ $btn-padding-y:0.3rem;
     }
 }
 
+.profile-dropdown {
+    left: -200px !important;
+    z-index: 999999999999999999 !important;
+    transition: all 0.7s ease-in-out !important;
+    width: 260px;
+}
+
 $nav-link-color: gray;
 $nav-link-hover-color: black;
 $nav-link-padding-x:0.7rem;
